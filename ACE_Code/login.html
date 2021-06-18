@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style-login.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script>https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js</script>
+        <script>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <title>Login</title>
+    </head>
+    <body>
+      <!--navbar-->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navb" class="navbar-collapse collapse hide">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Help/Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="login.html active"><span class="fas fa-sign-in-alt"></span> Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <!--Login Form-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><!--to remove while line and slide form for image-->
+                <div class="card">
+                    <form onsubmit="event.preventDefault()" class="box" method="post" action="login.php">
+                        <h1>Login</h1>
+                        <div class="checkbox"><label style="color:white"><input type="checkbox" value="">Are you a co-operative?</label></div>
+                        <p class="text-muted"> Please enter your login and password!</p>
+                        <input type="text" name="usrname" placeholder="Username">
+                        <input type="password" name="pwd" placeholder="Password">
+                        <a class="forgot text-muted" href="#">Forgot password?</a> &nbsp&nbsp&nbsp<a class="forgot text-muted" href="signup.html">New User?</a>
+                        <input type="submit" name="login" value="Login" href="login1.html">
+
+                        <div class="col-md-12">
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!--Footer-->
+              <footer class="page-footer font-small blue bg-dark">
+                <div class="footer-copyright text-center py-3">
+
+                    <div style="color:white">© 2021 Copyright :<a href="#"> ACE.com</a></div>
+                </div>
+              </footer>
+
+    </body>
+  </html>

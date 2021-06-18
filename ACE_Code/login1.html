@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script>https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js</script>
+    <script>https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+#slotlab{
+  color:white;
+
+
+}
+    </style>
+    <title> Dashboard</title>
+  </head>
+  <body>
+    <!--navbar-->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">ACE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navb" class="navbar-collapse collapse hide">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Help/Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="login.html active"><span class="fas fa-sign-in-alt"></span> Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--navbar end-->
+    <!--information-->
+    <div class="container" >
+        <div class="row">
+            <div><!--to remove while line and slide form for image-->
+                <div class="card">
+                    <form onsubmit="event.preventDefault()" class="box" style="height:600px;margin-top:15px">
+                        <h1>Farmer Details</h1>
+                        <p class="text-muted"> Please enter your details!</p>
+                        <input type="text" name="" placeholder="Crop Detail">
+                        <input type="text" name="" placeholder="Name">
+                        <input type="text" name="" placeholder="Quantity (in kgs)">
+                        <label for="Slot" id="slotlab">Choose the date and time: </label><br>
+                        <input type="date" name="Slot Date">
+                        <select name="Slot time">
+		<option value="morning">9:00 AM</option>
+		<option value="noon">12:00 PM</option>
+		<option value="afternoon">3:00 PM</option>
+		<option value="evening">5:00 PM</option>
+	</select>
+
+
+                        <input type="submit" name="" value="Book Slot" href="pop.html">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+  </body>
+</html>
